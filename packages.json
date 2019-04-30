@@ -1,5 +1,5 @@
 {
-    "packageId": "daa0f7cef2fc2",
+    "packageId": "b3e343b70d2bb",
     "name": "issues",
     "description": "issue reporting package",
     "buttons": [
@@ -125,9 +125,11 @@
                                         "id": "1ad6e24ef3c5eb",
                                         "type": "node",
                                         "parent": "294a02fc041418",
-                                        "children": []
+                                        "children": [],
+                                        "rules": []
                                     }
-                                ]
+                                ],
+                                "rules": []
                             }
                         ],
                         "rules": [
@@ -156,9 +158,11 @@
                                         "id": "238a7582d9a788",
                                         "type": "node",
                                         "parent": "1f4da8563f31f4",
-                                        "children": []
+                                        "children": [],
+                                        "rules": []
                                     }
-                                ]
+                                ],
+                                "rules": []
                             }
                         ],
                         "rules": [
@@ -233,6 +237,148 @@
                     "webhookId": "238a7582d9a788"
                 }
             ]
+        },
+        {
+            "buttonId": "2435d909ea346a",
+            "name": "property issues",
+            "description": "logs of all property issues",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "property issues",
+                    "type": "datastoreitem",
+                    "values": {
+                        "storeId": "propertyissues",
+                        "schema": [
+                            {
+                                "id": "1ad6e24ef3c5eb_pressed",
+                                "path": "1ad6e24ef3c5eb_pressed",
+                                "alias": "logged",
+                                "default": ""
+                            },
+                            {
+                                "id": "ffdd68fa839cc",
+                                "path": "ffdd68fa839cc",
+                                "alias": "issue type",
+                                "default": ""
+                            }
+                        ],
+                        "dschema": [
+                            {
+                                "id": "1ad6e24ef3c5eb_presser",
+                                "path": "1ad6e24ef3c5eb_presser",
+                                "alias": "reported by",
+                                "default": ""
+                            },
+                            {
+                                "id": "1ad6e24ef3c5eb_pressed",
+                                "path": "1ad6e24ef3c5eb_pressed",
+                                "alias": "report time",
+                                "default": ""
+                            },
+                            {
+                                "id": "ffdd68fa839cc",
+                                "path": "ffdd68fa839cc",
+                                "alias": "issue type",
+                                "default": ""
+                            },
+                            {
+                                "id": "294a02fc041418",
+                                "path": "294a02fc041418",
+                                "alias": "notes",
+                                "default": ""
+                            }
+                        ],
+                        "filters": [],
+                        "limit": -1,
+                        "orderby": "pressed",
+                        "sortby": "asc"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "2dad1d0dce7f88",
+                    "number": 1
+                }
+            ],
+            "navigation": {
+                "id": "2dad1d0dce7f88",
+                "type": "node",
+                "parent": null,
+                "children": [],
+                "defaults": {}
+            },
+            "webhooks": []
+        },
+        {
+            "buttonId": "2a3c286f76c414",
+            "name": "antisocial issues",
+            "description": "antisocial issues",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "antisocial issues",
+                    "type": "datastoreitem",
+                    "values": {
+                        "storeId": "antisocialissues",
+                        "schema": [
+                            {
+                                "id": "238a7582d9a788_pressed",
+                                "path": "238a7582d9a788_pressed",
+                                "alias": "reported",
+                                "default": ""
+                            },
+                            {
+                                "id": "7c17f5cf795f9c",
+                                "path": "7c17f5cf795f9c",
+                                "alias": "issue type",
+                                "default": ""
+                            }
+                        ],
+                        "dschema": [
+                            {
+                                "id": "238a7582d9a788_presser",
+                                "path": "238a7582d9a788_presser",
+                                "alias": "reported by",
+                                "default": ""
+                            },
+                            {
+                                "id": "238a7582d9a788_pressed",
+                                "path": "238a7582d9a788_pressed",
+                                "alias": "report date",
+                                "default": ""
+                            },
+                            {
+                                "id": "7c17f5cf795f9c",
+                                "path": "7c17f5cf795f9c",
+                                "alias": "issue type",
+                                "default": ""
+                            },
+                            {
+                                "id": "1f4da8563f31f4",
+                                "path": "1f4da8563f31f4",
+                                "alias": "details",
+                                "default": ""
+                            }
+                        ],
+                        "filters": [],
+                        "limit": -1,
+                        "orderby": "pressed",
+                        "sortby": "asc"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "121e650f8b0449",
+                    "number": 1
+                }
+            ],
+            "navigation": {
+                "id": "121e650f8b0449",
+                "type": "node",
+                "parent": null,
+                "children": [],
+                "defaults": {}
+            },
+            "webhooks": []
         }
     ]
 }
