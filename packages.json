@@ -1,0 +1,108 @@
+{
+    "packageId": "21049f290f643c",
+    "name": "",
+    "description": "",
+    "buttons": [
+        {
+            "buttonId": "2d87483597c958",
+            "name": "my first button",
+            "description": "my first button description",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "type of issue",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "property",
+                            "antisocial"
+                        ],
+                        "multiple": "single",
+                        "none": false,
+                        "description": "please let us know if the issue relates to property or antisocial behaviour"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "2272d6966a408e",
+                    "number": 1
+                },
+                {
+                    "question": "type of property issue",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "exterior/grounds",
+                            "roof",
+                            "water",
+                            "heating",
+                            "decoration",
+                            "lift",
+                            "building access",
+                            "pests/infestations",
+                            "health&safety",
+                            "damp",
+                            "bins",
+                            "drains",
+                            "lighting",
+                            "windows",
+                            "gates",
+                            "parking",
+                            "security"
+                        ],
+                        "multiple": "multiple",
+                        "none": false,
+                        "description": "please select the category that best fits the issue"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "ffdd68fa839cc",
+                    "number": 2
+                },
+                {
+                    "question": "type of antisocial behaviour",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "noise",
+                            "fellow residents",
+                            "vandalism",
+                            "trespass",
+                            "burglary",
+                            "graffiti",
+                            "drunk & disorderly",
+                            "litter"
+                        ],
+                        "multiple": "multiple",
+                        "none": false,
+                        "description": "please select the category that best fits the type of antisocial issue"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "7c17f5cf795f9c",
+                    "number": 3
+                }
+            ],
+            "navigation": {
+                "id": "2272d6966a408e",
+                "type": "node",
+                "parent": null,
+                "children": [
+                    {
+                        "id": "ffdd68fa839cc",
+                        "type": "node",
+                        "parent": "2272d6966a408e",
+                        "children": []
+                    },
+                    {
+                        "id": "7c17f5cf795f9c",
+                        "type": "node",
+                        "parent": "2272d6966a408e",
+                        "children": []
+                    }
+                ],
+                "defaults": {}
+            },
+            "webhooks": []
+        }
+    ]
+}
