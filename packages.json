@@ -1,5 +1,5 @@
 {
-    "packageId": "b3e343b70d2bb",
+    "packageId": "6bbeb41d239bc",
     "name": "issues",
     "description": "issue reporting package",
     "buttons": [
@@ -285,7 +285,13 @@
                             {
                                 "id": "294a02fc041418",
                                 "path": "294a02fc041418",
-                                "alias": "notes",
+                                "alias": "property notes",
+                                "default": ""
+                            },
+                            {
+                                "id": "1f4da8563f31f4",
+                                "path": "1f4da8563f31f4",
+                                "alias": "antisocial notes",
                                 "default": ""
                             }
                         ],
